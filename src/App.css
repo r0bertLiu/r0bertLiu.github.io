@@ -1,0 +1,327 @@
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+}
+
+/********************* responsive *********************/
+
+/* md */
+@media (max-width: 991.98px) { 
+  #profile {
+    display: block !important;
+    margin:0 auto;
+  }
+
+  #profileText {
+    margin-top: 20px;
+  }
+}
+
+/* sm */
+@media (min-width: 576px){ 
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-size: 1.25rem;
+  }
+
+  h3{
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  .contact-ul {
+    font-size: 1.25rem;
+  }
+
+  .large-icon {
+    font-size: 2rem;
+  }
+
+}
+
+/* Extra sm  */
+@media (max-width: 575.98px) { 
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  h3{
+    font-size: 0.75rem;
+  }
+
+  body {
+    font-size: 0.75rem;
+  }
+
+  .large-icon {
+    font-size: 1.5rem;
+  }
+
+  .contact-ul {
+    font-size: 1rem;
+  }
+
+  /* .container {
+    width: 80%;
+  } */
+
+}
+
+
+/********************* container *********************/
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/************************ Nav ************************/
+.navbar {
+  /* padding: 0rem 2rem; */
+  transition: .5s background ease;
+  font-size: 1rem;
+}
+
+.navbarBorder-light {
+  border-bottom: 1px solid  rgb(200, 200, 200);
+}
+
+.navbarBorder-dark {
+  border-bottom: 1px solid  rgb(100, 100, 100);
+}
+
+.navBrand {
+  font-family: Orbitron, sans-serif;
+  font-size: 1.5rem;
+}
+
+/********************** sections **********************/
+.mySection {
+  padding: 5rem 0rem;
+  transition: .5s background ease;
+}
+
+.bgClass1 {
+  background-color: rgb(255, 255, 255);
+  color:black;
+}
+
+.bgClass2 {
+  background-color: rgb(248, 248, 248);
+  color:black;
+}
+
+.DarkbgClass1 {
+  background-color: rgb(39, 41, 53);
+  color:white;
+}
+
+.DarkbgClass2 {
+  background-color: rgb(35, 37, 47);
+  color:white;
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/*********************** home ************************/
+#homeCover {
+  margin: 80px 0 80px 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+  /* white-space: pre; */
+
+}
+
+.animationText {
+  position: relative;
+  display: flex;
+  line-height: 1;
+  color:black;
+  font-size: 2.5em;
+  font-family: Raleway, sans-serif;
+}
+
+.animationTextDarkMode{
+  color:#6ee1f5;
+}
+
+.animationText span {
+  opacity: 0;
+  transform: scale(0);
+  animation: fadeIn 1.5s forwards;
+}
+
+.animationText::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  background:black;
+  opacity: 0;
+  transform: scale(0);
+  animation: toLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+}
+
+.animationText::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  right: 50%;
+  background:black;
+  opacity: 0;
+  transform: scale(0);
+  animation: toRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes toLeft {
+  to {
+    left: -20%;
+    opacity: 1;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes toRight {
+  to {
+    right: -20%;
+    opacity: 1;
+    transform: scale(0.8);
+  }
+}
+
+/*********************** about ************************/
+
+#profile {
+  display: inline-block;
+}
+
+#profile * {
+  display: block;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+#profileText {
+  margin: auto 0 auto 0;
+}
+
+#profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 10px 10px 30px -10px black;
+}
+
+/********************** Project **********************/
+
+.cardCol {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.myCard {
+  background-color: rgb(255, 255, 255);
+  border:1px solid  rgb(200, 200, 200);
+  box-shadow: 10px 10px 30px -10px grey;
+}
+
+/* .myCard:hover {
+  box-shadow: 10px 10px 15px -10px rgb(100, 100, 100);
+} */
+
+.myCardDarkMode {
+  background-color: rgb(52, 58, 64);
+  border:1px solid  rgb(100, 100, 100);
+  box-shadow: 10px 10px 30px -10px black;
+
+}
+
+.card-footerDarkMode {
+  background-color: rgb(44, 50, 56);
+  border-top:1px solid  rgb(100, 100, 100);
+}
+
+.responsiveImg {
+  width: 100%;
+  height:auto;
+}
+
+/********************** footer **********************/
+
+footer {
+  padding: 3rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.powerby {
+  margin-bottom: 0;
+}
+
+.back-button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+/*********************** icon ***********************/
+.myIcon{
+  color: black;
+}
+
+.myIconDarkMode{
+  color: white;
+}
+
+.large-icon {
+  margin-right: 30px;
+}
