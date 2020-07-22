@@ -26,6 +26,12 @@ class Contact extends React.Component {
           <a href="https://github.com/r0bertLiu">https://github.com/r0bertLiu</a>
         </span>
       </li>
+      <li >
+        <i className="fa fa-linkedin large-icon" aria-hidden="true"></i>
+        <span> 
+          <a href="https://www.linkedin.com/in/yubai-liu-b703a2182/">https://www.linkedin.com/in/yubai-liu-b703a2182/</a>
+        </span>
+      </li>
     </ul>
     );
   }
