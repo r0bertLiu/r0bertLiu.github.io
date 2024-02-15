@@ -4,7 +4,17 @@ This project build by React and react-boostrap library which host by github page
 
 The implemented features include: Dark mode, Responsive layout, Scroll Navigation, Css animated text.
 
+## quick start
+
+1. install node
+2. npm install
+3. checkout to dev branch
+4. run `npm start`
+
 ## Github.io instruction
+
+github.io static page is hold under gh-page branch. 
+simply run `npm npm run deploy` to deployment the build. It will automatically published the build on gh-page based on `package.json`
 
 ## React-app instruction
 
