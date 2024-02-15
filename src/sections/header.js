@@ -91,20 +91,20 @@ class Header extends React.Component {
 
   renderToggleIcon() {
     // select icon
-    let i = this.state.toggleExpand ? "close" : "menu";
-    let j = "material-icons";
+    let value = this.state.toggleExpand ? "close" : "menu";
+    let className = "material-icons";
     return <ToggleIcon 
-             value={i}
-             class={j}
+             value={value}
+             class={className}
          />;
   }
 
   renderDarkToggleIcon() {
-    let i = this.state.darkMode? "wb_sunny" : "brightness_2";
-    let j = this.state.darkMode? "material-icons-outlined":  "material-icons";
+    let value = this.state.darkMode? "wb_sunny" : "brightness_2";
+    let className = this.state.darkMode? "material-icons-outlined":  "material-icons";
     return <ToggleIcon 
-             value={i}
-             class={j}
+             value={value}
+             class={className}
          />;
   }
 
@@ -127,6 +127,7 @@ class Header extends React.Component {
             <Nav className="ml-auto" onSelect={this.handleNavSelect}>
               <Nav.Link href="#" eventKey="home">Home</Nav.Link>
               <Nav.Link href="#" eventKey="about">About</Nav.Link>
+              <Nav.Link href="#" eventKey="experience">Experience</Nav.Link>
               <Nav.Link href="#" eventKey="projects">Projects</Nav.Link>
               <Nav.Link href="#" eventKey="education">Education</Nav.Link>
               <Nav.Link href="#" eventKey="contact">Contact</Nav.Link>

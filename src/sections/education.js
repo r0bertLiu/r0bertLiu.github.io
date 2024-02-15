@@ -1,6 +1,5 @@
 import React from 'react';
-import SectionTemplate from './sectionTemplate';
-
+import SectionTemplate from '../components/sectionTemplate';
 
 class Education extends React.Component {
   renderLeftSection() {

@@ -4,6 +4,8 @@ This project build by React and react-boostrap library which host by github page
 
 The implemented features include: Dark mode, Responsive layout, Scroll Navigation, Css animated text.
 
+## Github.io instruction
+
 ## React-app instruction
 
 In the project directory, you can run:

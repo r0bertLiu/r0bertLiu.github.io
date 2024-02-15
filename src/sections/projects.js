@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTemplate from './sectionTemplate';
+import SectionTemplate from '../components/sectionTemplate';
 import { Row, Col, Card  } from 'react-bootstrap';
 
 class Projects extends React.Component {
