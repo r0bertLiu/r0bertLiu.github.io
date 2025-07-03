@@ -14,7 +14,7 @@ The implemented features include: Dark mode, Responsive layout, Scroll Navigatio
 ## Github.io instruction
 
 github.io static page is hold under gh-page branch. 
-simply run `npm npm run deploy` to deployment the build. It will automatically published the build on gh-page based on `package.json`
+simply run `npm run deploy` to deployment the build. It will automatically published the build on gh-page based on `package.json`
 
 ## React-app instruction
 

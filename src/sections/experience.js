@@ -9,9 +9,24 @@ class Experience extends React.Component {
   }
 
   renderightSection() {
+    const expDataKttiPay = {
+      comp: "Kttipay | Sydney",
+      period: "Apr 2024 - May 2025",
+      title: "SENIOR iOS DEVELOPER",
+      detail: "Refactor and continue development on the Kttipay app for iOS. Resolve the potential issue and tech debts from legacy code base and refactor it to use the modern architecture and follow the software development principle. ",
+      bulletPoints: [ 
+        "▪ Led the integration of features toggles control and in-house deep link management. ", 
+        "▪ Refactor the authentication flow of sign in, sign off and biometric check. ",
+        "▪ Contribute to the design system library and create well documented, organised UI components. ",
+        "▪ Integrated SwiftUI with UIKit to create hybrid interfaces deliver seamless, native user experiences. address interoperability challenges, such as managing lifecycle differences and navigation control. ",
+        "▪ Fix potential bugs, issues and tech debts and implement new features. ",
+        "▪ Collaborate with product and backend team to design the solutions of new feature which satisfy the iOS native experience. "
+      ]
+    }
+
     const expDataBill = {
       comp: "Bill.com | Sydney",
-      period: "May 2021 - Apr 2022",
+      period: "Apr 2022 - Dec 2023",
       title: "SENIOR iOS DEVELOPER",
       detail: "Contributed to the development and maintenance of the Invoice2Go app for iOS, ensuring alignment with Bill.com's financial service offerings for small and midsize businesses.",
       bulletPoints: [ 
@@ -50,6 +65,7 @@ class Experience extends React.Component {
 
     return (
       <>
+        <ExperienceCollapse expData={expDataKttiPay}/>
         <ExperienceCollapse expData={expDataBill}/>
         <ExperienceCollapse expData={expDataAutomic}/>
         <ExperienceCollapse expData={expDataEdQuire}/>
